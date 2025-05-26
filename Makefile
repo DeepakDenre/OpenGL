@@ -1,13 +1,16 @@
 SOURCES := $(wildcard src/*.cpp src/*.c)
-compile:
+windows:
 	mkdir Build
 	g++ $(SOURCES) -Iinclude -Llib -lglfw3 -lgdi32 -luser32 -lopengl32 -o Build/OpenGL.exe
-
-run:
 	./Build/OpenGL.exe
 
+android:
+	mkdir Build
+	clang++ src/main.cpp src/glad.c -Iinclude -lglfw -lGL -lX11 -o Build/OpenGL
+	./Build/OpenGL
+
 clean:
-	del Build\OpenGL.exe
+	rm Build/OpenGL*
 	rmdir Build
 	
 test:
