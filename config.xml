@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Config>
-	<Window>
-		<Width>1920</Width>
-		<Height>1080</Height>
-		<Title>Open GL Application</Title>
-	</Window>
-</Config>
