@@ -1,0 +1,2 @@
+/usr/bin/ar qc /home/deepak/Dev/OpenGL/bin/libglad.a CMakeFiles/glad.dir/src/app/glad.c.o
+/usr/bin/ranlib /home/deepak/Dev/OpenGL/bin/libglad.a
